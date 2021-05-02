@@ -1,0 +1,38 @@
+name: printing_demo
+description: Pdf Printing Demo
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0-0 <3.0.0"
+  flutter: ">=1.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.1
+  intl: ^0.17.0
+  open_file: ^3.1.0
+  path_provider: ^2.0.1
+  printing: ^5.0.4
+  url_launcher: ^6.0.3
+    # Use Another_Brother directly from its git Repo
+  another_brother:
+    git:
+      url: git://github.com/CodeMinion/another_brother.git
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  test: ^1.16.5
+
+dependency_overrides:
+  pdf:
+    path: ../pdf
+  printing:
+    path: ../printing
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
