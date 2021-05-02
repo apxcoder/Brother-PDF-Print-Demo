@@ -2,7 +2,7 @@
 
 This example project combines https://github.com/DavBfr/dart_pdf and Another Brother https://github.com/CodeMinion/another_brother.
 
-Steps ussed (23 min):
+## Steps ussed (23 mins):
 
 1. Clone https://github.com/DavBfr/dart_pdf
 2. Open the `demo` project.
@@ -59,7 +59,7 @@ void brotherPrint(BuildContext context, String filePath) async {
     printInfo.macAddress = printers.single.macAddress;
 
     await printer.setPrinterInfo(printInfo);
-    printer.printPdfFile(filePath, 1);
+    printer.printPdfFile(filePath, _pageSize);
   }
 ```
 This example uses Bluetooth to print on a `PJ_763MFi`.
